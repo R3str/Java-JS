@@ -1,0 +1,115 @@
+body
+{
+  font-family: Arial;
+}
+
+header
+{
+  height: 50px;
+  width: 1920px;
+  margin-left: -8px;
+  margin-top: -21px;
+  text-align: center;
+
+  background-color: burlywood;
+  color: #ffffff;
+}
+header h1
+{
+  position: relative;
+  top: 5px;
+}
+
+main
+{
+  height: 400px;
+  width: 80%;
+  margin-left: 9.5%;
+
+  border: 5px solid burlywood;
+  border-radius: 30px;
+}
+#main_div
+{
+  width: 400px;
+  position: relative;
+  top: 7%;
+  left: 37%;
+  padding-bottom: 1%;
+  text-align: center;
+
+  color: rgb(83, 8, 8);
+  border-bottom: 3px solid burlywood;
+  border-radius: 5px;
+}
+
+.btn {
+  display: inline-block;
+  border: 2px solid rgb(83, 8, 8);
+  border-radius: 3px;
+  color:  rgb(83, 8, 8);
+  cursor: pointer;
+  font-size: 13px;
+  padding: 12px 20px;
+  font-weight: 700
+}
+.btn:hover {
+  background-color: rgba(104, 10, 10, .05)
+}
+.btn:active { background:rgb(83, 8, 8); }
+
+.mobile-menu {
+  overflow: hidden;
+  visibility: hidden
+}
+.mobile-menu .overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.7);
+  z-index: 1;
+  opacity: 0
+}
+.mobile-menu .menu {
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: -300px;
+  width: 350px;
+  height: 100vh;
+  z-index: 2;
+  background-color: #fff
+}
+.mobile-menu.animation .menu,.mobile-menu.animation .overlay {
+  transition: all .3s ease
+}
+.mobile-header {
+  padding: 1px;
+  text-align: center;
+  background-color: burlywood;
+  color: white;
+}
+.mobile-main
+{
+  color: rgb(83, 8, 8);
+  padding: 2px 16px;
+}
+
+/* The close button on mobile menu */
+.close {
+  float: right;
+  padding-right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+
+  color: white;
+}
+.close:hover,
+.close:focus {
+  text-decoration: none;
+  cursor: pointer;
+
+  color: #000;
+}

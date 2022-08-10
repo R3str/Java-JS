@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+  <meta charset="utf-8">
+  <title>Мой сайт</title>
+  <link rel="stylesheet" href="style.css">
+ </head>
+
+ <body>
+     
+     <header>
+         <h1>Сайт для модального окна</h1>
+     </header>
+
+     <main>
+        <div id="main_div">
+            <h2>Нажмите на кнопку</h2>
+            <button id="myBtn">Кнопка</button>
+        </div>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Модальное окно</h2>
+                </div>
+
+                <div class="modal-body">
+                    <p>Это модальное окно с использованием анимации</p>
+                    <p>Что бы закрыть модальное окно, нажмите на крестик или за пределы модального окна</p>
+                </div>
+
+            </div>
+            
+        </div>
+     </main>
+
+     
+     <script>
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+
+        // When the user clicks on span 'close' (x)
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal
+        window.onclick = function(event) 
+        {
+            if (event.target == modal) 
+            {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+ </body>
+
+</html>

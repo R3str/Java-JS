@@ -1,0 +1,1 @@
+[{"name":"Украина","capital":"Киев","population":1200000},{"name":"Германия","capital":"Берлин","population":3292365},{"name":"Великобритания","capital":"Лондон","population":8908081}]
